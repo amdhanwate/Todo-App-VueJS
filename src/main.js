@@ -33,7 +33,11 @@ new Vue({
             // console.log(index, this.todo)
             this.isEditing = true
             this.selectedIndex = index
-            this.todo = todo
+            
+            setTimeout(() => {
+                document.querySelector("#editInput").focus()
+                this.todo = todo
+            }, 100);
         },
 
         updateTodo() {
