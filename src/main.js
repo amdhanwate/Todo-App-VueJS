@@ -6,7 +6,7 @@ new Vue({
         selectedIndex: null,
         todo: "",
         todos: JSON.parse(localStorage.getItem("todos")),
-        todosLength: JSON.parse(localStorage.getItem("todos")).length || 0
+        todosLength: (JSON.parse(localStorage.getItem("todos")) || 0).length || 0
     },
 
     methods: {
