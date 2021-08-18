@@ -1,0 +1,40 @@
+
+h1 {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+ol {
+    margin-top: 2rem;
+    padding: 10px;
+    list-style-type: square;
+    /* border: 2px solid #666; */
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 2px solid gray;
+}
+
+.btn-container {
+    flex-shrink: 0;
+}
+
+button {
+    margin-bottom: 0.5rem;
+}
+
+.no-items {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+    .todo {
+        flex-direction: column;
+        gap: 0.6rem;
+        text-align: center;
+    }
+}
